@@ -1,6 +1,18 @@
 # CDAAnnotation
 Annotation project connecting the Chandra Data Archive &amp; Source Catalog with [ALeRCE](http://alerce.science/).
 
+## Dependencies
+- astropy (>= 5.0)
+- datetime (>= 4.3)
+- mocpy (>= 0.10.0)
+- numpy (>= 1.21.2)
+- pandas (>= 1.3.5)
+- psycopg2 (>= 2.8.6)
+- python (>= 3.9.7)
+- pyvo (>= 1.2.1)
+- requests (>= 2.27.1)
+- shapely (>= 1.7.1)
+
 ## Usage
 ```
 python -m annotate [-h] [--a ARCHIVE] [--c CLASSIFER]
