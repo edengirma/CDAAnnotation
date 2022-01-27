@@ -8,3 +8,59 @@
 01/27/2022 03:15:59 PM - INFO - Total ZTF objects retrieved: 0
 01/27/2022 03:15:59 PM - INFO - Done; no ZTF objects retrieved from ALeRCE
 01/27/2022 03:15:59 PM - INFO - ######## PROGRAM RUN END ########
+01/27/2022 04:10:00 PM - INFO - ######## PROGRAM RUN START ########
+01/27/2022 04:10:00 PM - INFO - ######## ARCHIVE=CDA CLASSIFIER=lightcurve DAYS_AGO=7.0 NOVEL_OBJECTS=True ########
+01/27/2022 04:10:00 PM - INFO - Querying ALeRCE broker...
+01/27/2022 04:10:01 PM - DEBUG - Starting new HTTPS connection (1): github.com:443
+01/27/2022 04:10:01 PM - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 151
+01/27/2022 04:10:01 PM - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+01/27/2022 04:10:02 PM - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+01/27/2022 04:11:14 PM - INFO - Total ZTF objects retrieved: 0
+01/27/2022 04:11:14 PM - INFO - Done; no ZTF objects retrieved from ALeRCE.
+01/27/2022 04:11:14 PM - INFO - ######## PROGRAM RUN END ########
+01/27/2022 04:11:57 PM - INFO - ######## PROGRAM RUN START ########
+01/27/2022 04:11:57 PM - INFO - ######## ARCHIVE=CDA CLASSIFIER=lightcurve DAYS_AGO=6.0 NOVEL_OBJECTS=True ########
+01/27/2022 04:11:57 PM - INFO - Querying ALeRCE broker...
+01/27/2022 04:11:57 PM - DEBUG - Starting new HTTPS connection (1): github.com:443
+01/27/2022 04:11:57 PM - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 151
+01/27/2022 04:11:57 PM - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+01/27/2022 04:11:57 PM - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+01/27/2022 04:13:09 PM - INFO - Total ZTF objects retrieved: 29
+01/27/2022 04:13:09 PM - INFO - Filtering table with Chandra MOC...
+01/27/2022 04:13:09 PM - INFO - Total ZTF objects passed through filter: 1
+01/27/2022 04:13:09 PM - INFO - Retrieving CXC data for ZTF objects...
+01/27/2022 04:13:09 PM - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+01/27/2022 04:13:11 PM - DEBUG - http://cda.cfa.harvard.edu:80 "GET /cscweb/rest/cone-search-indiv-by-coords.do?json=%7B%22selectQualifier%22%3A%7B%22selectClause%22%3A%22all%22%7D%2C%22coords%22%3A%7B%22ra%22%3A83.85247515%2C%22dec%22%3A-5.191593883333333%2C%22sr%22%3A%7B%22value%22%3A%2220%22%2C%22unit%22%3A%22arcsec%22%7D%7D%2C%22userSuppliedRAandDEC%22%3Anull%7D HTTP/1.1" 200 26280
+01/27/2022 04:13:11 PM - DEBUG - Starting new HTTPS connection (1): cda.cfa.harvard.edu:443
+01/27/2022 04:13:11 PM - DEBUG - https://cda.cfa.harvard.edu:443 "GET /cxcscs/coneSearch?RA=83.85247515&DEC=-5.191593883333333&SR=0.8333333333333334&VERB=2 HTTP/1.1" 200 None
+01/27/2022 04:13:11 PM - DEBUG - Starting new HTTPS connection (1): cda.cfa.harvard.edu:443
+01/27/2022 04:13:12 PM - DEBUG - https://cda.cfa.harvard.edu:443 "POST /cxctap//sync HTTP/1.1" 303 None
+01/27/2022 04:13:14 PM - DEBUG - https://cda.cfa.harvard.edu:443 "GET /cxctap//sync/mznYsN HTTP/1.1" 303 None
+01/27/2022 04:13:14 PM - DEBUG - https://cda.cfa.harvard.edu:443 "GET /cxctap//sync/mznYsN/results/result HTTP/1.1" 200 None
+01/27/2022 04:13:14 PM - INFO - Total Chandra xmatches retrieved:19
+01/27/2022 04:13:14 PM - INFO - Outputting data...
+01/27/2022 04:13:14 PM - INFO - Done; ZTF data outputted.
+01/27/2022 04:13:14 PM - INFO - ######## PROGRAM RUN END ########
+01/27/2022 04:13:51 PM - INFO - ######## PROGRAM RUN START ########
+01/27/2022 04:13:51 PM - INFO - ######## ARCHIVE=CSC CLASSIFIER=lightcurve DAYS_AGO=6.0 NOVEL_OBJECTS=True ########
+01/27/2022 04:13:51 PM - INFO - Querying ALeRCE broker...
+01/27/2022 04:13:51 PM - DEBUG - Starting new HTTPS connection (1): github.com:443
+01/27/2022 04:13:51 PM - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 151
+01/27/2022 04:13:51 PM - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+01/27/2022 04:13:51 PM - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+01/27/2022 04:15:00 PM - INFO - Total ZTF objects retrieved: 29
+01/27/2022 04:15:00 PM - INFO - Filtering table with Chandra MOC...
+01/27/2022 04:15:00 PM - INFO - Total ZTF objects passed through filter: 1
+01/27/2022 04:15:00 PM - INFO - Retrieving CXC data for ZTF objects...
+01/27/2022 04:15:00 PM - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+01/27/2022 04:15:00 PM - DEBUG - http://cda.cfa.harvard.edu:80 "GET /cscweb/rest/cone-search-indiv-by-coords.do?json=%7B%22selectQualifier%22%3A%7B%22selectClause%22%3A%22all%22%7D%2C%22coords%22%3A%7B%22ra%22%3A83.85247515%2C%22dec%22%3A-5.191593883333333%2C%22sr%22%3A%7B%22value%22%3A%2220%22%2C%22unit%22%3A%22arcsec%22%7D%7D%2C%22userSuppliedRAandDEC%22%3Anull%7D HTTP/1.1" 200 26280
+01/27/2022 04:15:00 PM - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+01/27/2022 04:15:00 PM - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2scs/coneSearch?RA=83.85247515&DEC=-5.191593883333333&SR=0.016666666666666666&VERB=2 HTTP/1.1" 200 None
+01/27/2022 04:15:00 PM - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+01/27/2022 04:15:01 PM - DEBUG - http://cda.cfa.harvard.edu:80 "POST /csc2tap//sync HTTP/1.1" 303 None
+01/27/2022 04:15:01 PM - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2tap//sync/9ktJ0y HTTP/1.1" 303 None
+01/27/2022 04:15:01 PM - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2tap//sync/9ktJ0y/results/result HTTP/1.1" 200 None
+01/27/2022 04:15:01 PM - INFO - Total Chandra xmatches retrieved:2
+01/27/2022 04:15:01 PM - INFO - Outputting data...
+01/27/2022 04:15:01 PM - INFO - Done; ZTF data outputted.
+01/27/2022 04:15:01 PM - INFO - ######## PROGRAM RUN END ########
