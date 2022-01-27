@@ -1,6 +1,6 @@
 import sys
 import argparse
-import .program as program
+from . import program
 from .args import args_setup
 
 parser = args_setup()
