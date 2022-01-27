@@ -1,6 +1,12 @@
 # CDAAnnotation
 Annotation project connecting the Chandra Data Archive &amp; Source Catalog with [ALeRCE](http://alerce.science/).
 
+## Usage
+```
+python -m annotate [-h] [--a ARCHIVE] [--c CLASSIFER]
+                   [--d DAYS_AGO] [--n NOVEL_OBJECTS]
+```
+
 ## Optional arguments:
 ```
   -h, --help         Show this help message and exit
