@@ -20,7 +20,7 @@ from astropy.io.votable import parse_single_table, from_table, writeto
 from astropy.io import ascii
 from datetime import datetime
 
-# Package for nearMOC filtering
+# Packages for nearMOC filtering
 from mocpy import MOC
 import csv
 
@@ -34,11 +34,6 @@ import pyvo as vo
 # Package for footprint geometric descriptions
 import shapely.geometry as sg
 import shapely.ops as so
-
-# Packages for display and data plotting, if desired
-from IPython.display import HTML
-from IPython.display import display
-import matplotlib.pyplot as plt
 
 # Defining function that queries ZTF database
 # Returns classified object data as pandas dataframe
