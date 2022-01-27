@@ -38,7 +38,7 @@ import shapely.ops as so
 # Defining function that queries ZTF database
 # Returns classified object data as pandas dataframe
 
-def ALERCE_DB_query(classifier, date=datetime.today(), novel_objects=True):
+def ALERCE_DB_query(classifier, date=datetime.today().strftime("%Y-%m-%d"), novel_objects=True):
     # print('-- Connecting to ALeRCE database...')
     # Connecting to the ZTF database
     url = "https://github.com/alercebroker/usecases/raw/master/alercereaduser_v4.json"
@@ -48,10 +48,14 @@ def ALERCE_DB_query(classifier, date=datetime.today(), novel_objects=True):
         user=params['user'],
         host=params['host'],
         password=params['password'])
-
+    
+    # Convert date argument to datetime object
+    date = np.asarray(date.split('-'), dtype=int)
+    det_date = datetime(*date)
+    
     # Specifying the detection date bounds of the database query
-    min_lastmjd = np.floor(Time(date, scale='utc').mjd) - 1.0
-    max_lastmjd = np.floor(Time(date, scale='utc').mjd)
+    min_lastmjd = np.floor(Time(det_date, scale='utc').mjd) - 1.0
+    max_lastmjd = np.floor(Time(det_date, scale='utc').mjd)
 
     # Defining classifier name and version for the database query
     classifiers = {'stamp': ["\'stamp_classifier\'", "\'stamp_classifier_1.0.4\'"],
