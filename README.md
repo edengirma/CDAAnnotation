@@ -2,6 +2,7 @@
 Annotation project connecting the Chandra Data Archive &amp; Source Catalog with [ALeRCE](http://alerce.science/).
 
 ## Optional arguments:
+```
   -h, --help         Show this help message and exit
   --a ARCHIVE        Workflow branch - CDA or CSC (default: CDA)
   --c CLASSIFER      ZTF Classifier - stamp or lightcurve (default:
@@ -10,3 +11,4 @@ Annotation project connecting the Chandra Data Archive &amp; Source Catalog with
                      (default: 2.0)
   --n NOVEL_OBJECTS  Whether only newly detected objects are retrieved from
                      ALeRCE - 1=True, 0=False (default: 1)
+```
