@@ -1,8 +1,0 @@
-{
-    "params" : {
-        "dbname" : "ztf_v2",
-        "user" : "alerceread",
-        "host": "db.alerce.online",
-        "password" : "alerce2019"
-    }
-}

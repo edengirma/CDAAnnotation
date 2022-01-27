@@ -1,0 +1,20 @@
+01/26/2022 09:24:36 PM - INFO - ######## PROGRAM RUN START ########
+01/26/2022 09:24:36 PM - INFO - Querying ALeRCE broker...
+01/26/2022 09:24:36 PM - DEBUG - Starting new HTTPS connection (1): github.com:443
+01/26/2022 09:24:36 PM - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 151
+01/26/2022 09:24:36 PM - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+01/26/2022 09:24:36 PM - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+01/26/2022 09:25:43 PM - INFO - Total ZTF objects retrieved: 0
+01/26/2022 09:25:43 PM - INFO - Filtering table with Chandra MOC...
+01/26/2022 09:25:43 PM - INFO - Total ZTF objects passed through filter: 0
+01/26/2022 09:25:43 PM - INFO - Done; no ZTF object positions lie in Chandra MOC
+01/26/2022 09:25:43 PM - INFO - ######## PROGRAM RUN START ########
+01/26/2022 09:25:43 PM - INFO - Querying ALeRCE broker...
+01/26/2022 09:25:43 PM - DEBUG - Starting new HTTPS connection (1): github.com:443
+01/26/2022 09:25:43 PM - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 151
+01/26/2022 09:25:43 PM - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+01/26/2022 09:25:44 PM - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+01/26/2022 09:26:50 PM - INFO - Total ZTF objects retrieved: 0
+01/26/2022 09:26:50 PM - INFO - Filtering table with Chandra MOC...
+01/26/2022 09:26:50 PM - INFO - Total ZTF objects passed through filter: 0
+01/26/2022 09:26:50 PM - INFO - Done; no ZTF object positions lie in Chandra MOC
