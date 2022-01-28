@@ -32,6 +32,7 @@ Traceback (most recent call last):
   File "/Users/cxc/CDAAnnotation/annotate/functions.py", line 308, in ZTF_CXC_xmatch
     mztf = maskedztf.as_array().filled()
 AttributeError: 'numpy.ndarray' object has no attribute 'filled'
+01/27/2022 08:52:28 PM - INFO - ######## PROGRAM RUN END ########
 01/27/2022 08:53:43 PM - INFO - ######## PROGRAM RUN START ########
 01/27/2022 08:53:43 PM - INFO - ######## ARCHIVE=CDA CLASSIFIER=lightcurve DATE=2021-03-06 NOVEL_OBJECTS=True ########
 01/27/2022 08:53:43 PM - INFO - Querying ALeRCE broker...
