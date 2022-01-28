@@ -14,9 +14,10 @@ Annotation project connecting the Chandra Data Archive &amp; Source Catalog with
 - shapely (>= 1.7.1)
 
 ## Usage
+After changing your working directory to where the repository folder has been saved (`cd /Path/To/CDAAnnotation`), run the following command:
 ```
 python -m annotate [-h] [--a ARCHIVE] [--c CLASSIFER]
-                   [--d DAYS_AGO] [--n NOVEL_OBJECTS]
+                   [--d DATE] [--n NOVEL_OBJECTS]
 ```
 
 ## Optional arguments:
@@ -25,7 +26,7 @@ python -m annotate [-h] [--a ARCHIVE] [--c CLASSIFER]
   --a ARCHIVE        Workflow branch - CDA or CSC (default: CDA)
   --c CLASSIFER      ZTF Classifier - stamp or lightcurve (default:
                      lightcurve)
-  --d DATE           Date of detection that ALerCE database is queried. Format as YYYY-MM-DD
+  --d DATE           Date of detection that ALeRCE database is queried. Formatted as YYYY-MM-DD
                      (default: Current date)
   --n NOVEL_OBJECTS  Whether only newly detected objects are retrieved from
                      ALeRCE - 1=True, 0=False (default: 1)
