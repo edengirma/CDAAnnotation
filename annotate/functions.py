@@ -38,7 +38,7 @@ import shapely.ops as so
 # Defining function that queries ZTF database
 # Returns classified object data as pandas dataframe
 
-def ALERCE_DB_query(classifier, date=datetime.today().strftime("%Y-%m-%d"), novel_objects=True):
+def ALERCE_DB_query(classifier='lightcurve', date=datetime.today().strftime("%Y-%m-%d"), novel_objects=True):
     # print('-- Connecting to ALeRCE database...')
     # Connecting to the ZTF database
     url = "https://github.com/alercebroker/usecases/raw/master/alercereaduser_v4.json"
@@ -48,11 +48,11 @@ def ALERCE_DB_query(classifier, date=datetime.today().strftime("%Y-%m-%d"), nove
         user=params['user'],
         host=params['host'],
         password=params['password'])
-    
+
     # Convert date argument to datetime object
     date = np.asarray(date.split('-'), dtype=int)
     det_date = datetime(*date)
-    
+
     # Specifying the detection date bounds of the database query
     min_lastmjd = np.floor(Time(det_date, scale='utc').mjd) - 1.0
     max_lastmjd = np.floor(Time(det_date, scale='utc').mjd)
@@ -251,7 +251,7 @@ def coneTAPsearch(archive, ztfobjects):
     tresult = unique(tresult, keys=field_name)
 
     # Formatting cone search result array to combine with tapservice result table
-    cresult = Table.from_pandas(cxc_results).filled()
+    cresult = Table.from_pandas(cxc_results)
     cresult[field_name]=cresult[cfield_name].astype(object)
     if archive == 'CDA':
         cresult.remove_column(cfield_name)
@@ -310,7 +310,7 @@ def ZTF_CXC_xmatch(archive, ztfobjects, tcresults, n_results):
 
     if len(keys) > 1:
         # Adding extra rows, according to the number of cone search results each ZTF object has
-        ztf_fr = mztf.filled()
+        ztf_fr = mztf
         ztf_nres = n_results[n_results != 0]
         ztf_fr = Table(np.repeat(ztf_fr,n_results))
 
