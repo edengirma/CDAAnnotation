@@ -1,3 +1,4 @@
 # Ignore folder with testing IPython notebooks
 annotate/testing
 annotate/__pycache__
+annotate/.ipynb_checkpoints
