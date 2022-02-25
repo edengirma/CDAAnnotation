@@ -26,7 +26,8 @@ python -m annotate [-h] [--a ARCHIVE] [--c CLASSIFER]
   --a ARCHIVE        Workflow branch - CDA or CSC (default: CDA)
   --c CLASSIFER      ZTF Classifier - stamp or lightcurve (default:
                      lightcurve)
-  --d DATE           Date of detection that ALeRCE database is queried. Formatted as YYYY-MM-DD
+  --d DATE           Date of detection that ALeRCE database is queried. 
+                     Must format argument as YYYY-MM-DD
                      (default: Current date)
   --n NOVEL_OBJECTS  Whether only newly detected objects are retrieved from
                      ALeRCE - 1=True, 0=False (default: 1)
