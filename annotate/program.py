@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Configure logger
 FORMAT='%(asctime)s - %(levelname)s - %(message)s'
-DATEFMT='%m/%d/%Y %I:%M:%S %p'
-logging.basicConfig(filename=log_path, encoding='utf-8', format=FORMAT, datefmt=DATEFMT, level=logging.DEBUG)
+DATEFMT='%Y-%m-%d %H:%M:%S'
+logging.basicConfig(filename=log_path, format=FORMAT, datefmt=DATEFMT, level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 # Main program run method
@@ -32,15 +32,18 @@ def run(archive='CDA', classifier='lightcurve', date=datetime.today().strftime("
 
         logger.info('Retrieving CXC data for ZTF objects...')
         ztf_fullxmatch = retrieve_ZTF_CXC_data(archive, ztfobjects)
-        logger.info(f'Total Chandra xmatches retrieved:{len(ztf_fullxmatch)}')
+        logger.info(f'Total Chandra xmatches retrieved: {len(ztf_fullxmatch)}')
+
+        if len(ztf_fullxmatch)==0:
+            logger.info('Done; no CXC data retrieved for ZTF objects.')
+            logger.info('######## PROGRAM RUN END ########')
+            return
 
         logger.info('Outputting data...')
         output_path = {'CDA': cda_output_path,
-                       'CSC': csc_output_path}[archive]
-        append_data(ztf_fullxmatch, output_path)
+                       'CSC': csc_output_path}[archive]+date+'.xml'
+        export_data(ztf_fullxmatch, output_path)
 
-        # print('Exporting data table')
-        # export_data(ztf_fullxmatch, output_path)
         logger.info('Done; ZTF data outputted.')
         logger.info('######## PROGRAM RUN END ########')
 

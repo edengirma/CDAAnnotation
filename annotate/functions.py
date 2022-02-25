@@ -400,8 +400,9 @@ def export_data(datatable, filename):
 
 # Defining a function that allows you append astropy table rows to an
 # existing VOTable
-def append_data(data, filename):
-    old_table = parse_single_table(filename).to_table()
-    new_table = vstack([old_table, data])
+def append_data(data, template_path, output_path):
+    old_table = parse_single_table(template_path).to_table()
+    new_table = vstack([template_path, data])
     votable = from_table(new_table)
-    writeto(votable, filename)
+
+    writeto(votable, output_path)
