@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE>
+   <FIELD ID="oid" arraysize="12" datatype="unicodeChar" name="oid"/>
+   <FIELD ID="meanra" datatype="double" name="meanra"/>
+   <FIELD ID="meandec" datatype="double" name="meandec"/>
+   <FIELD ID="sigmara" datatype="double" name="sigmara"/>
+   <FIELD ID="sigmadec" datatype="double" name="sigmadec"/>
+   <FIELD ID="firstmjd" datatype="double" name="firstmjd"/>
+   <FIELD ID="lastmjd" datatype="double" name="lastmjd"/>
+   <FIELD ID="ndet" datatype="long" name="ndet"/>
+   <FIELD ID="classifier_name" arraysize="13" datatype="unicodeChar" name="classifier_name"/>
+   <FIELD ID="class_name" arraysize="3" datatype="unicodeChar" name="class_name"/>
+   <FIELD ID="ranking" datatype="long" name="ranking"/>
+   <FIELD ID="probability" datatype="double" name="probability"/>
+   <FIELD ID="csc_usrid" arraysize="1" datatype="unicodeChar" name="csc_usrid"/>
+   <FIELD ID="csc_ra" datatype="double" name="csc_ra"/>
+   <FIELD ID="csc_dec" datatype="double" name="csc_dec"/>
+   <FIELD ID="csc_sr" arraysize="20" datatype="unicodeChar" name="csc_sr"/>
+   <FIELD ID="csc_flux_sens_b" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_b"/>
+   <FIELD ID="csc_flux_sens_w" arraysize="12" datatype="unicodeChar" name="csc_flux_sens_w"/>
+   <FIELD ID="csc_photflux_sens_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_b"/>
+   <FIELD ID="csc_photflux_sens_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_w"/>
+   <FIELD ID="csc_flux_sens_true_b" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_true_b"/>
+   <FIELD ID="csc_flux_sens_true_w" arraysize="12" datatype="unicodeChar" name="csc_flux_sens_true_w"/>
+   <FIELD ID="csc_photflux_sens_true_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_b"/>
+   <FIELD ID="csc_photflux_sens_true_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_w"/>
+   <FIELD ID="n_results" datatype="long" name="n_results"/>
+   <FIELD ID="csc_name" arraysize="*" datatype="unicodeChar" name="csc_name"/>
+   <FIELD ID="csc_err_ellipse_r0" datatype="double" name="csc_err_ellipse_r0"/>
+   <FIELD ID="csc_err_ellipse_r1" datatype="double" name="csc_err_ellipse_r1"/>
+   <FIELD ID="csc_err_ellipse_ang" datatype="double" name="csc_err_ellipse_ang"/>
+   <FIELD ID="csc_significance" datatype="double" name="csc_significance"/>
+   <FIELD ID="csc_likelihood" datatype="double" name="csc_likelihood"/>
+   <FIELD ID="csc_flux_aper_b" datatype="double" name="csc_flux_aper_b"/>
+   <FIELD ID="csc_flux_aper_lolim_b" datatype="double" name="csc_flux_aper_lolim_b"/>
+   <FIELD ID="csc_flux_aper_hilim_b" datatype="double" name="csc_flux_aper_hilim_b"/>
+   <FIELD ID="csc_flux_aper_w_1" datatype="double" name="csc_flux_aper_w_1"/>
+   <FIELD ID="csc_flux_aper_lolim_w_1" datatype="double" name="csc_flux_aper_lolim_w_1"/>
+   <FIELD ID="csc_flux_aper_hilim_w_1" datatype="double" name="csc_flux_aper_hilim_w_1"/>
+   <FIELD ID="csc_conf_flag" datatype="int" name="csc_conf_flag"/>
+   <FIELD ID="csc_dither_warning_flag" datatype="int" name="csc_dither_warning_flag"/>
+   <FIELD ID="csc_extent_flag" datatype="int" name="csc_extent_flag"/>
+   <FIELD ID="csc_pileup_flag" datatype="int" name="csc_pileup_flag"/>
+   <FIELD ID="csc_sat_src_flag" datatype="int" name="csc_sat_src_flag"/>
+   <FIELD ID="csc_streak_src_flag" datatype="int" name="csc_streak_src_flag"/>
+   <FIELD ID="csc_var_flag" datatype="int" name="csc_var_flag"/>
+   <FIELD ID="csc_hard_hm" datatype="double" name="csc_hard_hm"/>
+   <FIELD ID="csc_hard_hm_lolim" datatype="double" name="csc_hard_hm_lolim"/>
+   <FIELD ID="csc_hard_hm_hilim" datatype="double" name="csc_hard_hm_hilim"/>
+   <FIELD ID="csc_hard_hs" datatype="double" name="csc_hard_hs"/>
+   <FIELD ID="csc_hard_hs_lolim" datatype="double" name="csc_hard_hs_lolim"/>
+   <FIELD ID="csc_hard_hs_hilim" datatype="double" name="csc_hard_hs_hilim"/>
+   <FIELD ID="csc_hard_ms" datatype="double" name="csc_hard_ms"/>
+   <FIELD ID="csc_hard_ms_lolim" datatype="double" name="csc_hard_ms_lolim"/>
+   <FIELD ID="csc_hard_ms_hilim" datatype="double" name="csc_hard_ms_hilim"/>
+   <FIELD ID="csc_var_intra_index_b" datatype="int" name="csc_var_intra_index_b"/>
+   <FIELD ID="csc_var_intra_prob_b" datatype="double" name="csc_var_intra_prob_b"/>
+   <FIELD ID="csc_var_intra_index_w" datatype="int" name="csc_var_intra_index_w"/>
+   <FIELD ID="csc_var_intra_prob_w" datatype="double" name="csc_var_intra_prob_w"/>
+   <FIELD ID="csc_var_inter_index_b" datatype="int" name="csc_var_inter_index_b"/>
+   <FIELD ID="csc_var_inter_prob_b" datatype="double" name="csc_var_inter_prob_b"/>
+   <FIELD ID="csc_var_inter_index_w" datatype="int" name="csc_var_inter_index_w"/>
+   <FIELD ID="csc_var_inter_prob_w" datatype="double" name="csc_var_inter_prob_w"/>
+   <FIELD ID="csc_acis_num" datatype="int" name="csc_acis_num"/>
+   <FIELD ID="csc_hrc_num" datatype="int" name="csc_hrc_num"/>
+   <FIELD ID="csc_acis_time" datatype="double" name="csc_acis_time"/>
+   <FIELD ID="csc_hrc_time" datatype="double" name="csc_hrc_time"/>
+   <FIELD ID="csc_flux_aper_w_2" datatype="double" name="csc_flux_aper_w_2"/>
+   <FIELD ID="csc_flux_aper_lolim_w_2" datatype="double" name="csc_flux_aper_lolim_w_2"/>
+   <FIELD ID="csc_flux_aper_hilim_w_2" datatype="double" name="csc_flux_aper_hilim_w_2"/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.743418228148</TD>
+      <TD>41.493828773747765</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203458.4+412937</TD>
+      <TD>2.377004704245599</TD>
+      <TD>2.2061495205039012</TD>
+      <TD>35.0476972444724</TD>
+      <TD>2.883720930232602</TD>
+      <TD>17.24475025235472</TD>
+      <TD>1.1776648884554e-15</TD>
+      <TD>4.2824177762013e-16</TD>
+      <TD>1.9270879992906e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>-0.99937539038101</TD>
+      <TD>-1</TD>
+      <TD>-0.2792004996877</TD>
+      <TD>-0.5896314803248</TD>
+      <TD>-1</TD>
+      <TD>-0.0056214865708932</TD>
+      <TD>0.27108057464085</TD>
+      <TD>-0.14303560274828</TD>
+      <TD>0.66271080574641</TD>
+      <TD>0</TD>
+      <TD>0.46410084141734</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>6</TD>
+      <TD>0.968023562010117</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0</TD>
+      <TD>134020.92209799</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.74881923435</TD>
+      <TD>41.48662427030877</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203459.7+412911</TD>
+      <TD>0.8468058900116129</TD>
+      <TD>0.8237907673989373</TD>
+      <TD>157.33671865979377</TD>
+      <TD>5.085714285714309</TD>
+      <TD>94.09223543328784</TD>
+      <TD>1.7420334959284e-14</TD>
+      <TD>1.3857084626703e-14</TD>
+      <TD>2.0785626940054e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.41848844472205</TD>
+      <TD>0.23797626483448</TD>
+      <TD>0.58276077451593</TD>
+      <TD>0.57339163023111</TD>
+      <TD>0.35165521549032</TD>
+      <TD>0.7738913179263</TD>
+      <TD>0.17114303560275</TD>
+      <TD>-0.13054341036852</TD>
+      <TD>0.49156777014366</TD>
+      <TD>1</TD>
+      <TD>0.54262197815623</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>6</TD>
+      <TD>0.984215250700865</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0</TD>
+      <TD>134020.92209799</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.750832261039</TD>
+      <TD>41.480512922237594</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203500.1+412849</TD>
+      <TD>0.8371342280332577</TD>
+      <TD>0.766452544674038</TD>
+      <TD>84.61453329506776</TD>
+      <TD>4.378378378378259</TD>
+      <TD>69.12280793233869</TD>
+      <TD>1.143206181421e-14</TD>
+      <TD>9.3660265465818e-15</TD>
+      <TD>1.336036139733e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.49968769519051</TD>
+      <TD>0.35040599625234</TD>
+      <TD>0.631480324797</TD>
+      <TD>0.56964397251718</TD>
+      <TD>0.37414116177389</TD>
+      <TD>0.75140537164272</TD>
+      <TD>0.067457838850718</TD>
+      <TD>-0.210493441599</TD>
+      <TD>0.37289194253591</TD>
+      <TD>0</TD>
+      <TD>0.35453561670211</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>6</TD>
+      <TD>0.911272906965102</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>0</TD>
+      <TD>114327.922358768</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.75582584861286</TD>
+      <TD>41.49138618025897</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203501.3+412928</TD>
+      <TD>1.0608642789318072</TD>
+      <TD>0.9777682494903317</TD>
+      <TD>76.55807370316336</TD>
+      <TD>3.0555555555556038</TD>
+      <TD>26.244012135626793</TD>
+      <TD>3.4841923582671e-15</TD>
+      <TD>2.4072601748027e-15</TD>
+      <TD>4.497775589763e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.052467207995003</TD>
+      <TD>-0.35540287320425</TD>
+      <TD>0.40287320424735</TD>
+      <TD>-0.69706433479076</TD>
+      <TD>-0.86258588382261</TD>
+      <TD>-0.49656464709557</TD>
+      <TD>-0.69831355402873</TD>
+      <TD>-0.83260462211118</TD>
+      <TD>-0.526545908807</TD>
+      <TD>1</TD>
+      <TD>0.66226143694682</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>0.63143142433542</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0</TD>
+      <TD>134020.92209799</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.7606945671955</TD>
+      <TD>41.48675073722473</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203502.5+412912</TD>
+      <TD>1.3791433664964636</TD>
+      <TD>1.0677698415098773</TD>
+      <TD>82.9483083491491</TD>
+      <TD>2.6666666666664702</TD>
+      <TD>23.0024404998372</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1.7605909640497e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0.44638699531049</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0.88506855953927</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>0</TD>
+      <TD>114327.922358768</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abajgat</TD>
+      <TD>308.75577116666665</TD>
+      <TD>41.49131075</TD>
+      <TD>6.468612422962158e-05</TD>
+      <TD>8.325855511626479e-05</TD>
+      <TD>58655.398668999784</TD>
+      <TD>59466.34733799985</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.5811</TD>
+      <TD>1</TD>
+      <TD>308.7633392084733</TD>
+      <TD>41.48832668207544</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>2.0210553E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7.0681267E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>3.0936343E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.0978695E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6</TD>
+      <TD>2CXO J203503.2+412917</TD>
+      <TD>1.982439055916297</TD>
+      <TD>1.982436673262672</TD>
+      <TD>0</TD>
+      <TD>2.1052631578947034</TD>
+      <TD>10.504254292226813</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1.0993040410397e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0.6107178461879</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0.8627514406076799</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>0</TD>
+      <TD>114327.922358768</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

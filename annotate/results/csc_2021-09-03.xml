@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE>
+   <FIELD ID="oid" arraysize="12" datatype="unicodeChar" name="oid"/>
+   <FIELD ID="meanra" datatype="double" name="meanra"/>
+   <FIELD ID="meandec" datatype="double" name="meandec"/>
+   <FIELD ID="sigmara" datatype="double" name="sigmara"/>
+   <FIELD ID="sigmadec" datatype="double" name="sigmadec"/>
+   <FIELD ID="firstmjd" datatype="double" name="firstmjd"/>
+   <FIELD ID="lastmjd" datatype="double" name="lastmjd"/>
+   <FIELD ID="ndet" datatype="long" name="ndet"/>
+   <FIELD ID="classifier_name" arraysize="13" datatype="unicodeChar" name="classifier_name"/>
+   <FIELD ID="class_name" arraysize="3" datatype="unicodeChar" name="class_name"/>
+   <FIELD ID="ranking" datatype="long" name="ranking"/>
+   <FIELD ID="probability" datatype="double" name="probability"/>
+   <FIELD ID="csc_usrid" arraysize="1" datatype="unicodeChar" name="csc_usrid"/>
+   <FIELD ID="csc_ra" datatype="double" name="csc_ra"/>
+   <FIELD ID="csc_dec" datatype="double" name="csc_dec"/>
+   <FIELD ID="csc_sr" arraysize="20" datatype="unicodeChar" name="csc_sr"/>
+   <FIELD ID="csc_flux_sens_b" arraysize="12" datatype="unicodeChar" name="csc_flux_sens_b"/>
+   <FIELD ID="csc_flux_sens_w" arraysize="12" datatype="unicodeChar" name="csc_flux_sens_w"/>
+   <FIELD ID="csc_photflux_sens_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_b"/>
+   <FIELD ID="csc_photflux_sens_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_w"/>
+   <FIELD ID="csc_flux_sens_true_b" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_true_b"/>
+   <FIELD ID="csc_flux_sens_true_w" arraysize="12" datatype="unicodeChar" name="csc_flux_sens_true_w"/>
+   <FIELD ID="csc_photflux_sens_true_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_b"/>
+   <FIELD ID="csc_photflux_sens_true_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_w"/>
+   <FIELD ID="n_results" datatype="long" name="n_results"/>
+   <FIELD ID="csc_name" arraysize="*" datatype="unicodeChar" name="csc_name"/>
+   <FIELD ID="csc_err_ellipse_r0" datatype="double" name="csc_err_ellipse_r0"/>
+   <FIELD ID="csc_err_ellipse_r1" datatype="double" name="csc_err_ellipse_r1"/>
+   <FIELD ID="csc_err_ellipse_ang" datatype="double" name="csc_err_ellipse_ang"/>
+   <FIELD ID="csc_significance" datatype="double" name="csc_significance"/>
+   <FIELD ID="csc_likelihood" datatype="double" name="csc_likelihood"/>
+   <FIELD ID="csc_flux_aper_b" datatype="double" name="csc_flux_aper_b"/>
+   <FIELD ID="csc_flux_aper_lolim_b" datatype="double" name="csc_flux_aper_lolim_b"/>
+   <FIELD ID="csc_flux_aper_hilim_b" datatype="double" name="csc_flux_aper_hilim_b"/>
+   <FIELD ID="csc_flux_aper_w_1" datatype="double" name="csc_flux_aper_w_1"/>
+   <FIELD ID="csc_flux_aper_lolim_w_1" datatype="double" name="csc_flux_aper_lolim_w_1"/>
+   <FIELD ID="csc_flux_aper_hilim_w_1" datatype="double" name="csc_flux_aper_hilim_w_1"/>
+   <FIELD ID="csc_conf_flag" datatype="int" name="csc_conf_flag"/>
+   <FIELD ID="csc_dither_warning_flag" datatype="int" name="csc_dither_warning_flag"/>
+   <FIELD ID="csc_extent_flag" datatype="int" name="csc_extent_flag"/>
+   <FIELD ID="csc_pileup_flag" datatype="int" name="csc_pileup_flag"/>
+   <FIELD ID="csc_sat_src_flag" datatype="int" name="csc_sat_src_flag"/>
+   <FIELD ID="csc_streak_src_flag" datatype="int" name="csc_streak_src_flag"/>
+   <FIELD ID="csc_var_flag" datatype="int" name="csc_var_flag"/>
+   <FIELD ID="csc_hard_hm" datatype="double" name="csc_hard_hm"/>
+   <FIELD ID="csc_hard_hm_lolim" datatype="double" name="csc_hard_hm_lolim"/>
+   <FIELD ID="csc_hard_hm_hilim" datatype="double" name="csc_hard_hm_hilim"/>
+   <FIELD ID="csc_hard_hs" datatype="double" name="csc_hard_hs"/>
+   <FIELD ID="csc_hard_hs_lolim" datatype="double" name="csc_hard_hs_lolim"/>
+   <FIELD ID="csc_hard_hs_hilim" datatype="double" name="csc_hard_hs_hilim"/>
+   <FIELD ID="csc_hard_ms" datatype="double" name="csc_hard_ms"/>
+   <FIELD ID="csc_hard_ms_lolim" datatype="double" name="csc_hard_ms_lolim"/>
+   <FIELD ID="csc_hard_ms_hilim" datatype="double" name="csc_hard_ms_hilim"/>
+   <FIELD ID="csc_var_intra_index_b" datatype="int" name="csc_var_intra_index_b"/>
+   <FIELD ID="csc_var_intra_prob_b" datatype="double" name="csc_var_intra_prob_b"/>
+   <FIELD ID="csc_var_intra_index_w" datatype="int" name="csc_var_intra_index_w"/>
+   <FIELD ID="csc_var_intra_prob_w" datatype="double" name="csc_var_intra_prob_w"/>
+   <FIELD ID="csc_var_inter_index_b" datatype="int" name="csc_var_inter_index_b"/>
+   <FIELD ID="csc_var_inter_prob_b" datatype="double" name="csc_var_inter_prob_b"/>
+   <FIELD ID="csc_var_inter_index_w" datatype="int" name="csc_var_inter_index_w"/>
+   <FIELD ID="csc_var_inter_prob_w" datatype="double" name="csc_var_inter_prob_w"/>
+   <FIELD ID="csc_acis_num" datatype="int" name="csc_acis_num"/>
+   <FIELD ID="csc_hrc_num" datatype="int" name="csc_hrc_num"/>
+   <FIELD ID="csc_acis_time" datatype="double" name="csc_acis_time"/>
+   <FIELD ID="csc_hrc_time" datatype="double" name="csc_hrc_time"/>
+   <FIELD ID="csc_flux_aper_w_2" datatype="double" name="csc_flux_aper_w_2"/>
+   <FIELD ID="csc_flux_aper_lolim_w_2" datatype="double" name="csc_flux_aper_lolim_w_2"/>
+   <FIELD ID="csc_flux_aper_hilim_w_2" datatype="double" name="csc_flux_aper_hilim_w_2"/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>ZTF19abfaddy</TD>
+      <TD>343.61410275000003</TD>
+      <TD>62.505460883333335</TD>
+      <TD>0.00012104570624905268</TD>
+      <TD>5.5417449118303116e-05</TD>
+      <TD>58672.474687499925</TD>
+      <TD>59459.246088000014</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.546516</TD>
+      <TD>1</TD>
+      <TD>343.61421949508554</TD>
+      <TD>62.505511618299835</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>3.657596E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.3055017E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>5.0724665E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.8309773E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>2</TD>
+      <TD>2CXO J225427.4+623019</TD>
+      <TD>1.3143384580597037</TD>
+      <TD>1.0180677156618403</TD>
+      <TD>106.84701169258273</TD>
+      <TD>9.247478275608072</TD>
+      <TD>250.4126413652647</TD>
+      <TD>1.8969887550065e-14</TD>
+      <TD>1.2345482373852e-14</TD>
+      <TD>2.5293183400087e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>-0.1474078700812</TD>
+      <TD>-0.34540911930044</TD>
+      <TD>0.030605871330418</TD>
+      <TD>-0.039975015615241</TD>
+      <TD>-0.28544659587758</TD>
+      <TD>0.210493441599</TD>
+      <TD>0.11492816989382</TD>
+      <TD>-0.073079325421612</TD>
+      <TD>0.32042473454091</TD>
+      <TD>0</TD>
+      <TD>0.40079397186309</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>5</TD>
+      <TD>0.87447030781102</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>3</TD>
+      <TD>0</TD>
+      <TD>71676.411407479</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF19abfaddy</TD>
+      <TD>343.61410275000003</TD>
+      <TD>62.505460883333335</TD>
+      <TD>0.00012104570624905268</TD>
+      <TD>5.5417449118303116e-05</TD>
+      <TD>58672.474687499925</TD>
+      <TD>59459.246088000014</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.546516</TD>
+      <TD>1</TD>
+      <TD>343.6453558623758</TD>
+      <TD>62.50360066450523</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>3.657596E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.3055017E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>5.0724665E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.8309773E-6</TD>
+      <TD>3.4028235E38</TD>
+      <TD>2</TD>
+      <TD>2CXO J225434.8+623012</TD>
+      <TD>4.544979448690961</TD>
+      <TD>4.544979448690961</TD>
+      <TD>0</TD>
+      <TD>2.41025641025642</TD>
+      <TD>13.191273353690422</TD>
+      <TD>8.4725268275175e-15</TD>
+      <TD>2.3106891347775e-15</TD>
+      <TD>1.4634364520257e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>-0.35602748282324</TD>
+      <TD>-0.72017489069332</TD>
+      <TD>-0.004372267332917</TD>
+      <TD>-0.20612117426608</TD>
+      <TD>-0.62398500936914</TD>
+      <TD>0.526545908807</TD>
+      <TD>0.34103685196752</TD>
+      <TD>0.0068707058088695</TD>
+      <TD>0.89381636477202</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>22462.456491997</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 5.0
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE>
+   <FIELD ID="oid" arraysize="12" datatype="unicodeChar" name="oid"/>
+   <FIELD ID="meanra" datatype="double" name="meanra"/>
+   <FIELD ID="meandec" datatype="double" name="meandec"/>
+   <FIELD ID="sigmara" datatype="double" name="sigmara"/>
+   <FIELD ID="sigmadec" datatype="double" name="sigmadec"/>
+   <FIELD ID="firstmjd" datatype="double" name="firstmjd"/>
+   <FIELD ID="lastmjd" datatype="double" name="lastmjd"/>
+   <FIELD ID="ndet" datatype="long" name="ndet"/>
+   <FIELD ID="classifier_name" arraysize="13" datatype="unicodeChar" name="classifier_name"/>
+   <FIELD ID="class_name" arraysize="3" datatype="unicodeChar" name="class_name"/>
+   <FIELD ID="ranking" datatype="long" name="ranking"/>
+   <FIELD ID="probability" datatype="double" name="probability"/>
+   <FIELD ID="csc_usrid" arraysize="1" datatype="unicodeChar" name="csc_usrid"/>
+   <FIELD ID="csc_ra" datatype="double" name="csc_ra"/>
+   <FIELD ID="csc_dec" datatype="double" name="csc_dec"/>
+   <FIELD ID="csc_sr" arraysize="20" datatype="unicodeChar" name="csc_sr"/>
+   <FIELD ID="csc_flux_sens_b" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_b"/>
+   <FIELD ID="csc_flux_sens_w" arraysize="14" datatype="unicodeChar" name="csc_flux_sens_w"/>
+   <FIELD ID="csc_photflux_sens_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_b"/>
+   <FIELD ID="csc_photflux_sens_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_w"/>
+   <FIELD ID="csc_flux_sens_true_b" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_true_b"/>
+   <FIELD ID="csc_flux_sens_true_w" arraysize="13" datatype="unicodeChar" name="csc_flux_sens_true_w"/>
+   <FIELD ID="csc_photflux_sens_true_b" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_b"/>
+   <FIELD ID="csc_photflux_sens_true_w" arraysize="12" datatype="unicodeChar" name="csc_photflux_sens_true_w"/>
+   <FIELD ID="n_results" datatype="long" name="n_results"/>
+   <FIELD ID="csc_name" arraysize="*" datatype="unicodeChar" name="csc_name"/>
+   <FIELD ID="csc_err_ellipse_r0" datatype="double" name="csc_err_ellipse_r0"/>
+   <FIELD ID="csc_err_ellipse_r1" datatype="double" name="csc_err_ellipse_r1"/>
+   <FIELD ID="csc_err_ellipse_ang" datatype="double" name="csc_err_ellipse_ang"/>
+   <FIELD ID="csc_significance" datatype="double" name="csc_significance"/>
+   <FIELD ID="csc_likelihood" datatype="double" name="csc_likelihood"/>
+   <FIELD ID="csc_flux_aper_b" datatype="double" name="csc_flux_aper_b"/>
+   <FIELD ID="csc_flux_aper_lolim_b" datatype="double" name="csc_flux_aper_lolim_b"/>
+   <FIELD ID="csc_flux_aper_hilim_b" datatype="double" name="csc_flux_aper_hilim_b"/>
+   <FIELD ID="csc_flux_aper_w_1" datatype="double" name="csc_flux_aper_w_1"/>
+   <FIELD ID="csc_flux_aper_lolim_w_1" datatype="double" name="csc_flux_aper_lolim_w_1"/>
+   <FIELD ID="csc_flux_aper_hilim_w_1" datatype="double" name="csc_flux_aper_hilim_w_1"/>
+   <FIELD ID="csc_conf_flag" datatype="int" name="csc_conf_flag"/>
+   <FIELD ID="csc_dither_warning_flag" datatype="int" name="csc_dither_warning_flag"/>
+   <FIELD ID="csc_extent_flag" datatype="int" name="csc_extent_flag"/>
+   <FIELD ID="csc_pileup_flag" datatype="int" name="csc_pileup_flag"/>
+   <FIELD ID="csc_sat_src_flag" datatype="int" name="csc_sat_src_flag"/>
+   <FIELD ID="csc_streak_src_flag" datatype="int" name="csc_streak_src_flag"/>
+   <FIELD ID="csc_var_flag" datatype="int" name="csc_var_flag"/>
+   <FIELD ID="csc_hard_hm" datatype="double" name="csc_hard_hm"/>
+   <FIELD ID="csc_hard_hm_lolim" datatype="double" name="csc_hard_hm_lolim"/>
+   <FIELD ID="csc_hard_hm_hilim" datatype="double" name="csc_hard_hm_hilim"/>
+   <FIELD ID="csc_hard_hs" datatype="double" name="csc_hard_hs"/>
+   <FIELD ID="csc_hard_hs_lolim" datatype="double" name="csc_hard_hs_lolim"/>
+   <FIELD ID="csc_hard_hs_hilim" datatype="double" name="csc_hard_hs_hilim"/>
+   <FIELD ID="csc_hard_ms" datatype="double" name="csc_hard_ms"/>
+   <FIELD ID="csc_hard_ms_lolim" datatype="double" name="csc_hard_ms_lolim"/>
+   <FIELD ID="csc_hard_ms_hilim" datatype="double" name="csc_hard_ms_hilim"/>
+   <FIELD ID="csc_var_intra_index_b" datatype="int" name="csc_var_intra_index_b"/>
+   <FIELD ID="csc_var_intra_prob_b" datatype="double" name="csc_var_intra_prob_b"/>
+   <FIELD ID="csc_var_intra_index_w" datatype="int" name="csc_var_intra_index_w"/>
+   <FIELD ID="csc_var_intra_prob_w" datatype="double" name="csc_var_intra_prob_w"/>
+   <FIELD ID="csc_var_inter_index_b" datatype="int" name="csc_var_inter_index_b"/>
+   <FIELD ID="csc_var_inter_prob_b" datatype="double" name="csc_var_inter_prob_b"/>
+   <FIELD ID="csc_var_inter_index_w" datatype="int" name="csc_var_inter_index_w"/>
+   <FIELD ID="csc_var_inter_prob_w" datatype="double" name="csc_var_inter_prob_w"/>
+   <FIELD ID="csc_acis_num" datatype="int" name="csc_acis_num"/>
+   <FIELD ID="csc_hrc_num" datatype="int" name="csc_hrc_num"/>
+   <FIELD ID="csc_acis_time" datatype="double" name="csc_acis_time"/>
+   <FIELD ID="csc_hrc_time" datatype="double" name="csc_hrc_time"/>
+   <FIELD ID="csc_flux_aper_w_2" datatype="double" name="csc_flux_aper_w_2"/>
+   <FIELD ID="csc_flux_aper_lolim_w_2" datatype="double" name="csc_flux_aper_lolim_w_2"/>
+   <FIELD ID="csc_flux_aper_hilim_w_2" datatype="double" name="csc_flux_aper_hilim_w_2"/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.3301966815677</TD>
+      <TD>37.390214797608884</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202119.2+372324</TD>
+      <TD>0.9007974842054514</TD>
+      <TD>0.8027660668174466</TD>
+      <TD>41.788619754471966</TD>
+      <TD>6.69942709923836</TD>
+      <TD>171.06699710991066</TD>
+      <TD>5.73348608561e-15</TD>
+      <TD>4.6258808190717e-15</TD>
+      <TD>6.8410913521482e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>-0.67332916926921</TD>
+      <TD>-0.86633354153654</TD>
+      <TD>-0.46283572767021</TD>
+      <TD>-0.8682073703935</TD>
+      <TD>-0.95627732667083</TD>
+      <TD>-0.75890068707058</TD>
+      <TD>-0.43847595252967</TD>
+      <TD>-0.55028107432854</TD>
+      <TD>-0.31292941911305</TD>
+      <TD>2</TD>
+      <TD>0.7671339708913</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.33849817117857</TD>
+      <TD>37.387465726022434</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202121.2+372314</TD>
+      <TD>1.8153890581923764</TD>
+      <TD>1.2533905273322077</TD>
+      <TD>26.733494766602064</TD>
+      <TD>1.948717948717961</TD>
+      <TD>11.995495566492021</TD>
+      <TD>1.8098984931994e-15</TD>
+      <TD>6.0329949773312e-16</TD>
+      <TD>3.0164974886656e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.3210493441599</TD>
+      <TD>-0.088069956277327</TD>
+      <TD>0.66021236727046</TD>
+      <TD>0.99937539038101</TD>
+      <TD>0.29544034978139</TD>
+      <TD>1</TD>
+      <TD>0.75702685821362</TD>
+      <TD>0.048094940662086</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>0.45297444075845</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.34518755442446</TD>
+      <TD>37.394373443482884</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202122.8+372339</TD>
+      <TD>1.0310868010838605</TD>
+      <TD>0.8634104895709781</TD>
+      <TD>26.407838166744142</TD>
+      <TD>4.722222222222672</TD>
+      <TD>79.58503577853405</TD>
+      <TD>4.8418568397502e-15</TD>
+      <TD>3.6500151561194e-15</TD>
+      <TD>5.9592084181541e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1</TD>
+      <TD>0.34353529044347</TD>
+      <TD>0.12429731417864</TD>
+      <TD>0.53903810118676</TD>
+      <TD>0.10368519675203</TD>
+      <TD>-0.13928794503435</TD>
+      <TD>0.34915677701437</TD>
+      <TD>-0.25733916302311</TD>
+      <TD>-0.48782011242973</TD>
+      <TD>0.0093691442848218</TD>
+      <TD>8</TD>
+      <TD>0.99995592738874</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.34548295759396</TD>
+      <TD>37.38776213214885</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202122.9+372315</TD>
+      <TD>1.5561819790203182</TD>
+      <TD>1.0612471219791715</TD>
+      <TD>26.124008117516325</TD>
+      <TD>2.5405405405407593</TD>
+      <TD>15.184124568873589</TD>
+      <TD>1.932760661348e-15</TD>
+      <TD>9.2245395200701e-16</TD>
+      <TD>2.943067370689e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.46470955652717</TD>
+      <TD>0.11430356027483</TD>
+      <TD>0.74890693316677</TD>
+      <TD>0.35727670206121</TD>
+      <TD>-0.045596502186134</TD>
+      <TD>0.7264209868832</TD>
+      <TD>-0.18863210493442</TD>
+      <TD>-0.58900687070581</TD>
+      <TD>0.30793254216115</TD>
+      <TD>0</TD>
+      <TD>0.390651339026</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.3464181917416</TD>
+      <TD>37.384240640124666</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202123.1+372303</TD>
+      <TD>1.0267071755928394</TD>
+      <TD>0.8693965710382182</TD>
+      <TD>19.60401225039996</TD>
+      <TD>4.062500000000305</TD>
+      <TD>50.50921642318213</TD>
+      <TD>2.5955439052792e-15</TD>
+      <TD>1.7932848800111e-15</TD>
+      <TD>3.3978029305473e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>-0.32604622111181</TD>
+      <TD>-0.61024359775141</TD>
+      <TD>-0.050593379138039</TD>
+      <TD>-0.35602748282324</TD>
+      <TD>-0.65521549031855</TD>
+      <TD>-0.024359775140537</TD>
+      <TD>-0.012492192379763</TD>
+      <TD>-0.26795752654591</TD>
+      <TD>0.26420986883198</TD>
+      <TD>0</TD>
+      <TD>0.45172263897423</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.35348726467794</TD>
+      <TD>37.37592983935163</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202124.8+372233</TD>
+      <TD>1.0802993683570854</TD>
+      <TD>0.9451271747710883</TD>
+      <TD>49.102838605806426</TD>
+      <TD>3.9999999999995803</TD>
+      <TD>38.73420761568916</TD>
+      <TD>2.7340099229685e-15</TD>
+      <TD>1.8054782510169e-15</TD>
+      <TD>3.6109565020339e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.051217988757027</TD>
+      <TD>-0.24422236102436</TD>
+      <TD>0.31917551530294</TD>
+      <TD>-0.14865708931918</TD>
+      <TD>-0.44159900062461</TD>
+      <TD>0.16427232979388</TD>
+      <TD>-0.19237976264834</TD>
+      <TD>-0.43785134291068</TD>
+      <TD>0.094316052467208</TD>
+      <TD>2</TD>
+      <TD>0.77757514443168</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF18aazfnoi</TD>
+      <TD>305.34081933333334</TD>
+      <TD>37.38130185</TD>
+      <TD>2.2795935311786684e-05</TD>
+      <TD>1.8680979630930413e-05</TD>
+      <TD>58278.450694399886</TD>
+      <TD>59470.26755789993</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.404076</TD>
+      <TD>1</TD>
+      <TD>305.35355779009</TD>
+      <TD>37.38423004990573</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>1.2538527E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>4.3136572E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>1.791342E-15</TD>
+      <TD>3.4028235E38</TD>
+      <TD>6.238833E-7</TD>
+      <TD>3.4028235E38</TD>
+      <TD>7</TD>
+      <TD>2CXO J202124.8+372303</TD>
+      <TD>1.603669952622838</TD>
+      <TD>1.408105253169824</TD>
+      <TD>40.27078041845803</TD>
+      <TD>2.7027027027027533</TD>
+      <TD>22.512042383264408</TD>
+      <TD>1.9408406497362e-15</TD>
+      <TD>1.1027503691683e-15</TD>
+      <TD>2.7789309303042e-15</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1</TD>
+      <TD>0.99937539038101</TD>
+      <TD>0.65021861336665</TD>
+      <TD>1</TD>
+      <TD>0.28357276702061</TD>
+      <TD>-0.06683322923173</TD>
+      <TD>0.62023735165522</TD>
+      <TD>-0.99937539038101</TD>
+      <TD>-1</TD>
+      <TD>-0.44534665833854</TD>
+      <TD>6</TD>
+      <TD>0.90291731239891</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>1</TD>
+      <TD>0</TD>
+      <TD>70148.08939639</TD>
+      <TD>NaN</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF20acxcxhs</TD>
+      <TD>11.260825266666666</TD>
+      <TD>41.73559336666666</TD>
+      <TD>5.604732524095761e-05</TD>
+      <TD>4.014895598453527e-05</TD>
+      <TD>59195.21559030004</TD>
+      <TD>59470.40737270005</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.490992</TD>
+      <TD>1</TD>
+      <TD>11.255269115392991</TD>
+      <TD>41.720824350136766</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>7.414445E-15</TD>
+      <TD>1.19732715E-14</TD>
+      <TD>2.711499E-6</TD>
+      <TD>5.00763E-6</TD>
+      <TD>1.0520802E-14</TD>
+      <TD>1.4252905E-14</TD>
+      <TD>3.8940693E-6</TD>
+      <TD>5.9632375E-6</TD>
+      <TD>2</TD>
+      <TD>2CXO J004501.2+414314</TD>
+      <TD>9.402671712777769</TD>
+      <TD>7.908175175778277</TD>
+      <TD>72.78389386376324</TD>
+      <TD>3.1904761904761947</TD>
+      <TD>15.479266061977276</TD>
+      <TD>2.7551319834777e-14</TD>
+      <TD>1.9836950281039e-14</TD>
+      <TD>3.5265689388514e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0.57339163023111</TD>
+      <TD>0.34166146158651</TD>
+      <TD>0.76764522173641</TD>
+      <TD>0.99937539038101</TD>
+      <TD>0.579013116802</TD>
+      <TD>1</TD>
+      <TD>0.28856964397252</TD>
+      <TD>-0.063085571517801</TD>
+      <TD>0.88507183010618</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>0.62067123999281</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>31</TD>
+      <TD>68838.7429276362</TD>
+      <TD>41666.52388933292</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+     <TR>
+      <TD>ZTF20acxcxhs</TD>
+      <TD>11.260825266666666</TD>
+      <TD>41.73559336666666</TD>
+      <TD>5.604732524095761e-05</TD>
+      <TD>4.014895598453527e-05</TD>
+      <TD>59195.21559030004</TD>
+      <TD>59470.40737270005</TD>
+      <TD>6</TD>
+      <TD>lc_classifier</TD>
+      <TD>YSO</TD>
+      <TD>1</TD>
+      <TD>0.490992</TD>
+      <TD>1</TD>
+      <TD>11.261684958266187</TD>
+      <TD>41.741844393539004</TD>
+      <TD>0.005555555555555556</TD>
+      <TD>7.414445E-15</TD>
+      <TD>1.19732715E-14</TD>
+      <TD>2.711499E-6</TD>
+      <TD>5.00763E-6</TD>
+      <TD>1.0520802E-14</TD>
+      <TD>1.4252905E-14</TD>
+      <TD>3.8940693E-6</TD>
+      <TD>5.9632375E-6</TD>
+      <TD>2</TD>
+      <TD>2CXO J004502.8+414430</TD>
+      <TD>3.3124096919876598</TD>
+      <TD>1.8932291416914948</TD>
+      <TD>28.81076592515697</TD>
+      <TD>2.1025641025640724</TD>
+      <TD>12.245728079762028</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>1.1182369836639e-14</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>0</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>0</TD>
+      <TD>0.38139215676092</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>-2147483648</TD>
+      <TD>NaN</TD>
+      <TD>4</TD>
+      <TD>31</TD>
+      <TD>68835.5429767252</TD>
+      <TD>41666.52388933292</TD>
+      <TD/>
+      <TD/>
+      <TD/>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
