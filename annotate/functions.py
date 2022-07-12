@@ -272,7 +272,7 @@ def coneTAPsearch(archive, ztfobjects):
     # Join cone and tapservice result tables
     colkeys = [field_name]
     if len(tresult) > 1:
-        colkeys = [e for e in cresult.colnames if (e in tresult.colnames and (np.sort(tresult[e])==np.sort(cresult[e])).all())]
+        colkeys = [e for e in cresult.colnames if e in tresult.colnames]
 
     cresult.remove_columns(colkeys)
     tcresults = hstack([tresult, cresult], join_type='exact')

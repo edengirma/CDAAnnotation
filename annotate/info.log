@@ -1444,3 +1444,29 @@
 2022-02-27 14:04:19 - INFO - Total ZTF objects passed through filter: 0
 2022-02-27 14:04:19 - INFO - Done; no ZTF object positions lie in Chandra MOC.
 2022-02-27 14:04:19 - INFO - ######## PROGRAM RUN END ########
+2022-07-12 17:32:51 - INFO - ######## PROGRAM RUN START ########
+2022-07-12 17:32:51 - INFO - ######## ARCHIVE=CSC CLASSIFIER=lightcurve DATE=2022-06-07 NOVEL_OBJECTS=True ########
+2022-07-12 17:32:51 - INFO - Querying ALeRCE broker...
+2022-07-12 17:32:51 - DEBUG - Starting new HTTPS connection (1): github.com:443
+2022-07-12 17:32:52 - DEBUG - https://github.com:443 "GET /alercebroker/usecases/raw/master/alercereaduser_v4.json HTTP/1.1" 302 0
+2022-07-12 17:32:52 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2022-07-12 17:32:52 - DEBUG - https://raw.githubusercontent.com:443 "GET /alercebroker/usecases/master/alercereaduser_v4.json HTTP/1.1" 200 128
+2022-07-12 17:33:03 - INFO - Total ZTF objects retrieved: 14
+2022-07-12 17:33:03 - INFO - Filtering table with Chandra MOC...
+2022-07-12 17:33:04 - INFO - Total ZTF objects passed through filter: 2
+2022-07-12 17:33:04 - INFO - Retrieving CXC data for ZTF objects...
+2022-07-12 17:33:04 - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+2022-07-12 17:33:04 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /cscweb/rest/cone-search-indiv-by-coords.do?json=%7B%22selectQualifier%22%3A%7B%22selectClause%22%3A%22all%22%7D%2C%22coords%22%3A%7B%22ra%22%3A251.92645643333336%2C%22dec%22%3A34.80622948333333%2C%22sr%22%3A%7B%22value%22%3A%2220%22%2C%22unit%22%3A%22arcsec%22%7D%7D%2C%22userSuppliedRAandDEC%22%3Anull%7D HTTP/1.1" 200 26274
+2022-07-12 17:33:04 - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+2022-07-12 17:33:04 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /cscweb/rest/cone-search-indiv-by-coords.do?json=%7B%22selectQualifier%22%3A%7B%22selectClause%22%3A%22all%22%7D%2C%22coords%22%3A%7B%22ra%22%3A23.54433935%2C%22dec%22%3A30.763458383333333%2C%22sr%22%3A%7B%22value%22%3A%2220%22%2C%22unit%22%3A%22arcsec%22%7D%7D%2C%22userSuppliedRAandDEC%22%3Anull%7D HTTP/1.1" 200 27609
+2022-07-12 17:33:04 - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+2022-07-12 17:33:04 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2scs/coneSearch?RA=251.92645643333336&DEC=34.80622948333333&SR=0.016666666666666666&VERB=2 HTTP/1.1" 200 None
+2022-07-12 17:33:04 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2scs/coneSearch?RA=23.54433935&DEC=30.763458383333333&SR=0.016666666666666666&VERB=2 HTTP/1.1" 200 None
+2022-07-12 17:33:05 - DEBUG - Starting new HTTP connection (1): cda.cfa.harvard.edu:80
+2022-07-12 17:33:05 - DEBUG - http://cda.cfa.harvard.edu:80 "POST /csc2tap//sync HTTP/1.1" 303 None
+2022-07-12 17:33:05 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2tap//sync/DubyQJ HTTP/1.1" 303 None
+2022-07-12 17:33:05 - DEBUG - http://cda.cfa.harvard.edu:80 "GET /csc2tap//sync/DubyQJ/results/result HTTP/1.1" 200 None
+2022-07-12 17:33:05 - INFO - Total Chandra xmatches retrieved: 4
+2022-07-12 17:33:05 - INFO - Outputting data...
+2022-07-12 17:33:05 - INFO - Done; ZTF data outputted.
+2022-07-12 17:33:05 - INFO - ######## PROGRAM RUN END ########
